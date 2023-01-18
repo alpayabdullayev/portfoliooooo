@@ -1,0 +1,33 @@
+@import url(./reset.css);
+
+@import url(./base.css);
+
+.navbar {
+    background-color: #000;
+}
+
+/* Icons */
+.icon-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 24px;
+    color: #000;
+    padding: 25px;
+     position: fixed; 
+    top: 50%;
+    bottom: 50%;
+}
+
+.icon-links a i {
+    color: #000;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all 0.2s ease;
+}
+
+.icon-links a i:hover {
+    color: #fff;
+    background-color: #000;
+}

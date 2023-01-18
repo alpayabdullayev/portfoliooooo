@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color-body: #FEFBF6;
+    --color-dark: #181D31;
+    --color-base: #678983;
+    --color-base2: #E6DDC4;
+    --color-brand: #F0E9D2;
+    --color-brand2: #000000;
+}
+
+body {
+    background-color: var(--color-body);
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.text-color {
+    color: var(--color-brand);
+}
+
+.atroposes {
+    width: 100%;
+    display: flex;
+}
+
+.typewrite {
+    color: #000;
+}
+
+.des-atropos {
+    width: 40%;
+    height: auto;
+}
+
+.atro-img {
+    border-radius: 40px;
+    object-fit: cover;
+    width: 400px;
+}
+
+.underline-hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: -5px;
+    left: 0;
+    background: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline-hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.btn-main  {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: all 0.2s ease-out;
+}
+
+.text-section{
+    color: violet;
+}
+
+.btn-main a{
+    color: #fff;
+}
+.btn-main a:hover{
+    color: #000;
+}
+
+
+.btn-main:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000
+}
+
+.content-center {
+     position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+
+@media (max-width:1220px){
+    .home-content{
+        margin-left: 35px;
+    }
+
+    .home-content .salam{
+        
+        margin-top: 25px;
+    }
+
+
+    .services-bottom{
+        margin-left: 35px;
+    }
+
+    .services-top{
+        text-align: center;
+    }
+
+   
+}
+
+
+
+
+
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+.card-custom{
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+}
+
+.card-custom{
+   
+    object-fit: cover;
+    flex-wrap: wrap;
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 violet;
+}
+
+
